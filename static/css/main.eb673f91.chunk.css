@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Vibur:400);
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: radial-gradient(circle at top right, #17215e 0, #0f1315 25%);
+    background-position: 100% 0;
+    background-repeat: no-repeat
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+#root {
+    height: 100%;
+    overflow: auto
+}
+
+.scrollbox {
+    overflow-y: scroll
+}
+
+.scrollbox::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 4px
+}
+
+.neonText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09
+}
+
+h1 {
+    font-family: "Vibur", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 5rem;
+    animation: flicker 1.5s infinite alternate
+}
+
+h2 {
+    font-size: 1.8rem
+}
+
+.container {
+    margin-top: 15vh
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    to {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none
+    }
+}
+
+.css-1l5pegx, .css-332on8, .css-1yxohrx {
+    overflow: visible!important;
+    box-shadow: none!important;
+    position: relative;
+    background: rgba(0, 0, 0, .8)!important;
+    margin-top: 20px
+}
+
+.css-1l5pegx:after, .css-332on8:after, .css-1yxohrx:after,
+.css-1l5pegx:before, .css-332on8:before, .css-1yxohrx:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #f09, #0094e3);
+    background-size: 400% 400%;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 20px;
+    z-index: -1;
+    animation: animate 5s ease infinite alternate
+}
+
+.css-1l5pegx:after, .css-332on8:after, .css-1yxohrx:after {
+    -webkit-filter: blur(20px);
+    filter: blur(20px)
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%
+    }
+
+    33% {
+        background-position: 0 0
+    }
+
+    66% {
+        background-position: 50% 0
+    }
+
+    to {
+        background-position: 0 5%
+    }
+}
+
+button:disabled,
+button[disabled] {
+    background: #fff!important
+}
+
+.MuiCardContent-root {
+    padding-top: 30px!important
+}
+
+.MuiGrid-root {
+    margin-right: 0!important;
+    margin-left: 0!important
+}
+
+.MuiButtonBase-root {
+    background: #f09!important
+}
+
+.css-fuacqv {
+    color: #0f1315 !important
+}
+
+.MuiAvatar-root {
+    position: absolute!important;
+    top: 10px;
+    right: 80px;
+    width: 35px!important;
+    height: auto!important
+}
+
+.MuiTypography-root {
+    color: #fff
+}
+
+ul {
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+
+ul li {
+    list-style: none;
+    margin: 0 15px
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    font-size: 30px;
+    color: #666
+}
+
+ul li a,
+ul li a:before {
+    border-radius: 50%;
+    transition: .5s
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: scale(.9);
+    z-index: -1;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #fff
+}
+
+svg {
+    width: 35px;
+    height: 60px;
+    -webkit-filter: drop-shadow(3px 1px 10px #f09);
+    filter: drop-shadow(3px 1px 10px #f09)
+}
+
+#Path_1,
+#Path_2 {
+    fill: #f09
+}
+
+.css-181a0oa {
+    font-size: 16px!important;
+    margin-bottom:20px!important;
+
+}
+
+.css-fvdvl6 {
+    max-width: 90vw!important;
+    max-height: 90vh!important
+}
+
+.MuiButtonBase-root-MuiIconButton-root {
+    color: #333!important
+}
+.css-mdn78g {
+    font-size:11px!important;
+}
+
+.walletconnect-qrcode__image{
+    width: inherit;
+    height: inherit;
+    filter: none;
+}
+
+.usdtMiner {
+    text-decoration:none;
+    padding:10px;
+    background-color: lightseagreen;
+    font-weight:bold;
+    letter-spacing: -0.5px;
+    color:#fff;
+    border-radius:3px;
+}
+/*# sourceMappingURL=main.eb673f91.chunk.css.map */
